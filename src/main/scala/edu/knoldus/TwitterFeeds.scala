@@ -24,7 +24,7 @@ object TwitterFeeds {
   /**
     * Method that takes two parameters: tag or string to be searched, and number of tweets to be fetched and returns tweets along with username, likes, and retweets
     */
-  @throws
+  
   def getTweets(searchTag: String, numOfTweets: Int): Future[String] = Future {
     try {
       val query: Query = new Query(searchTag)
